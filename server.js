@@ -21,14 +21,14 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Route to handle file upload
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/ZXCVF', upload.single('file'), (req, res) => {
   const fileUrl = `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`;
   res.status(200).send(fileUrl);
 });
 
 // Route to handle file download
-app.get('/uploads/:filename', (req, res) => {
-  const file = path.join(__dirname, 'uploads', req.params.filename);
+app.get('/ZXCVF/:filename', (req, res) => {
+  const file = path.join(__dirname, 'ZXCVF', req.params.filename);
   res.download(file);
 });
 
