@@ -9,7 +9,7 @@ const port = 3000;
 // Set up storage engine for Multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads/');
+    cb(null, 'ZXCVF/');
   },
   filename: (req, file, cb) => {
     const filename = `${Date.now()}-${file.originalname}`;
