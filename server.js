@@ -22,7 +22,7 @@ const upload = multer({ storage: storage });
 
 // Route to handle file upload
 app.post('/ZXCVF', upload.single('file'), (req, res) => {
-  const fileUrl = `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`;
+  const fileUrl = `${req.protocol}://${req.get('host')}/ZXCVF/${req.file.filename}`;
   res.status(200).send(fileUrl);
 });
 
